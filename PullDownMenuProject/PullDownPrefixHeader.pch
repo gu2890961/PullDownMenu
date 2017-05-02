@@ -1,0 +1,21 @@
+//
+//  PullDownPrefixHeader.pch
+//  PullDownMenuProject
+//
+//  Created by apple on 2017/5/2.
+//  Copyright © 2017年 gupeng. All rights reserved.
+//
+
+#ifndef PullDownPrefixHeader_pch
+#define PullDownPrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+// 定义这个常量，就可以不用在开发过程中使用"mas_"前缀。
+#define MAS_SHORTHAND
+// 定义这个常量，就可以让Masonry帮我们自动把基础数据类型的数据，自动装箱为对象类型。
+#define MAS_SHORTHAND_GLOBALS
+#import <Masonry.h>
+
+#endif /* PullDownPrefixHeader_pch */

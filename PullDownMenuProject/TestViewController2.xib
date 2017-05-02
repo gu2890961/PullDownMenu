@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TestViewController2">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="H0d-ZV-3Vj">
+                    <rect key="frame" x="177" y="338.5" width="20" height="20"/>
+                    <color key="color" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </activityIndicatorView>
+                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="SaI-u8-bQc">
+                    <rect key="frame" x="128.5" y="368.5" width="118" height="31"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="114" id="bSH-Gw-Xae"/>
+                    </constraints>
+                </slider>
+                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XRC-UQ-bvf">
+                    <rect key="frame" x="163" y="297.5" width="51" height="31"/>
+                </switch>
+                <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="tTf-v0-DcM">
+                    <rect key="frame" x="140" y="260.5" width="94" height="29"/>
+                </stepper>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="SaI-u8-bQc" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="7Tv-3T-Nx1"/>
+                <constraint firstItem="tTf-v0-DcM" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="EyS-px-XOS"/>
+                <constraint firstItem="SaI-u8-bQc" firstAttribute="top" secondItem="H0d-ZV-3Vj" secondAttribute="bottom" constant="10" id="KhN-Z4-S75"/>
+                <constraint firstItem="H0d-ZV-3Vj" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Vea-Qo-Uyb"/>
+                <constraint firstItem="XRC-UQ-bvf" firstAttribute="top" secondItem="tTf-v0-DcM" secondAttribute="bottom" constant="8" id="Wx9-33-oyj"/>
+                <constraint firstItem="H0d-ZV-3Vj" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="15" id="ZBQ-mR-6n4"/>
+                <constraint firstItem="H0d-ZV-3Vj" firstAttribute="top" secondItem="XRC-UQ-bvf" secondAttribute="bottom" constant="10" id="Zj2-Oj-ymA"/>
+                <constraint firstItem="XRC-UQ-bvf" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="lJI-bV-zhW"/>
+            </constraints>
+        </view>
+    </objects>
+</document>
